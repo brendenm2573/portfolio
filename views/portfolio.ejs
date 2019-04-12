@@ -1,0 +1,34 @@
+<% include ./partials/header %>
+<!-- NAV -->
+<nav class="flex">
+    <div class="navWrap">
+        <a class="navTab active" dest="home">
+            HOME
+        </a>
+        <a class="navTab" dest="about">
+            ABOUT
+        </a>
+        <a class="navTab" dest="portfolio">
+            PORTFOLIO
+        </a>
+        <a class="navTab" dest="blog">
+            BLOG
+        </a>
+    </div>
+</nav>
+<div class="flex">
+    <!-- TABS -->
+    <div class="tab active" id="home">
+        <% include ./partials/tabs/home %>
+    </div>
+    <div class="tab" id="about">
+        <% include ./partials/tabs/about %>
+    </div>
+    <div class="tab" id="portfolio">
+        <% include ./partials/tabs/portfolio %>
+    </div>
+    <div class="tab" id="blog">
+        <% include ./partials/tabs/blog %>
+    </div>
+</div>
+<% include ./partials/footer %>

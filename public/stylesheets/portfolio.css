@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 16pt;
+}
+
+nav {
+    height: 55px;
+    width: 100%;
+    background: #2b2b2a;
+    position: fixed;
+    color: white;
+    top:0;
+    text-align: center;
+    z-index: 100;
+}
+nav .navWrap {
+    margin-top: 15px;
+}
+
+nav a {
+    margin: 0 10px;
+    position: relative;
+    cursor: pointer;
+    display: inline;
+    padding: 0;
+    transition: color .5s;
+}
+
+nav a:hover{
+    color: pink;
+}
+
+.flex {
+   /*Allows flexbox*/
+  display: flex;/*Allows flexbox*/
+  /*Sets direction to column instead of default row*/
+  flex-direction: column;  
+  /*Places content in the center of the screen (Default left)*/
+  justify-content: center;
+  /*Aligns items to be in the center, default is to stretch and fit the screen*/
+  align-items: center; 
+}
+
+.tab {
+    visibility: hidden;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    padding-top: 100px;
+    z-index: -1;
+} .tab.active {
+    visibility: visible;
+    position: relative;
+    z-index:1;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.col {
+    width: 32%;
+    background: salmon;
+    flex: 1;
+    justify-content: space-between;
+}
+
+#home {
+    padding-top: 35vh;
+}
+
+#contactButton {
+    border: 1px solid pink;
+    padding: 9px 12px;
+    margin-top: 20px;
+    transition: background .5s;
+} #contactButton:hover {
+    background: pink;
+    cursor: pointer;
+}
