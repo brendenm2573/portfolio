@@ -6,16 +6,19 @@ $(".navTab").click(function(){
   window.scrollTo(0,0);
 });
 
+$("#contactButton").click(function(){
+  $("html, body").animate({ scrollTop: $(document).height() }, "slow");
+  return false;
+});
 
 var slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
+
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
-// Thumbnail image controls
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
